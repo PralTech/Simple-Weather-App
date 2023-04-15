@@ -11,7 +11,7 @@ function Weather() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=0f1f8fb58f0c4d721a76b1839bebf70e`);
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=YourApiKey`);
       if (!response.ok) {
         throw new Error('Could not fetch weather data');
       }
